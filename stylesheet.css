@@ -6,6 +6,7 @@ body {
 /*Navigation*/
 .nav {
     background: #cbcbcb;
+    border: 2px solid #00000;
 }
 
 .nav-links {
