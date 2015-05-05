@@ -1,0 +1,48 @@
+
+body {
+    background: #cbcbcb;
+}
+
+.nav {
+    background: #aaa;
+}
+
+.nav-links {
+    color: #5a5a5a;
+    font-size: 15px;
+    font-weight: bold;
+    padding-top: 30px;
+    padding-right: 20px;
+    text-transform: uppercase;   
+}
+
+.home h1 {
+    padding-bottom: 10px
+}
+
+.nav-links li {
+    display: inline;
+    padding-left: 20px;
+}
+
+.submit-group .container form * {
+    width: 600px;
+}
+
+.submit-button {
+    margin: 10px;
+}
+
+.post small p {
+    display: inline;
+}
+
+.post-list {
+    list-style-type: none;
+}
+
+.post {
+    padding: 20px;
+    background: #ededed;
+    border-radius: 5px;
+}
