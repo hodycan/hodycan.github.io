@@ -6,18 +6,19 @@
 
 
     <head>
-        <link type="text/css" rel="stylesheet" href="bootstrap.min.css">
-        <link type="text/css" rel="stylesheet" href="stylesheet.css">
         <title>Club Home Page</title>
+        <link type="text/css" rel="stylesheet" href="bootstrap.min.css">
+        <link type="text/css" rel="stylesheet" href="index.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        <script src="submission.js"></script>        
     </head>
 
 
     <body>
-
         <!--NAVIGATION-->
         <div class="nav">
             <div class="container">
-
                 <div class="pull-left">
                     <a href="" class="home">
                         <h1 class="pull-left">Club Name</h1> <!-- Make this Club Logo -->
@@ -33,25 +34,55 @@
             </div>
         </div>
 
-        <!--SUBMISSION BOX-->
-        <div class="container submit-group">
-            <div class="row form-group">
-                <div class="col-md-7 col-md-push-3">
-                    <h5>Submit a Post:</h5>
-                    <form>
-                        <input class="submit-title form-control" placeholder="title"></input>
-                        <textarea class="submit-body form-control" placeholder="body">
-                        </textarea>
-                    </form>
-                    <a href="#" class="submit-button btn btn-primary pull-right disabled">Post</a>
-                </div>
+
+        <!-- tabs for post type -->
+        <div class="container post-type-tabs">
+            <div class="row">
+                <ul class="nav nav-tabs col-md-8 col-md-push-2">
+                    <li class="active"><a data-toggle="tab" href="#announcement">Announcement</a></li>
+                    <li><a data-toggle="tab" href="#survey">Survey</a></li>
+                </ul>
             </div>
         </div>
 
+        <!--ANNOUNCEMENTS-->
+        <div class="tab-content">
+            <div id="announcement" class="container announcement-group tab-pane active">
+                <div class="row form-group">
+                    <div class="col-md-8 col-md-push-2">
+                        <h5>Submit a Post:</h5>
+                        <form>
+                            <input class="announcement-title form-control" placeholder="title"></input>
+                            <textarea class="announcement-body form-control" placeholder="body">
+                            </textarea>
+                        </form>
+                        <a href="#" class="post-announcement btn btn-primary pull-right disabled">Post</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SURVEYS -->
+            <div id="survey" class="container survey-group tab-pane">
+                <div class="row form-group">
+                    <div class="col-md-8 col-md-push-2">
+                        <h5>Post a Survey:</h5>
+                        <input class="survey-title form-control" placeholder="Ask a question..."></input>
+                        <div class="survey-choices">
+                            <input class="survey-choice form-control" placeholder="Option 1"></input>
+                            <input class="submit-choice form-control" placeholder="Option 2"></input>
+                        </div>
+                        <a href="#" class="add-choice pull-left disabled">Add another option</a>
+                        <a href="#" class="post-survey btn btn-primary pull-right disabled">Post</a>
+                    </div>
+                </div>
+            </div>   
+        </div>   
+
         <!--POSTS-->
         <div class="container">
-            <ul class="post-list">
-                <li class="post">
+        <div class="row">
+            <div class="newsfeed col-md-8 col-md-push-2">
+                <div class="post">
                     <a href="#"><h2>Post Title</h2></a>
                     <small>
                         <p class='post-date'>MM/DD/YYYY</p>
@@ -62,12 +93,12 @@
                     <!--<img src="URL">-->
                     word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word 
                     </p>
-                </li>
-            </ul>
+                </div>
+            </div>
+        </div>
         </div>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        <script src="submission.js"></script>
+
 
     </body>
 
