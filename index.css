@@ -31,8 +31,8 @@ body {
 }
 
 /*Submission text fields and button*/
-.submit-group .container form * {
-    /*width: 600px;*/
+.tab-content div:first-child {
+    padding: 7px;
 }
 
 .post-button {

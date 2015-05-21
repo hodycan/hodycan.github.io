@@ -37,20 +37,23 @@
 
         <!-- tabs for post type -->
         <div class="container post-type-tabs">
-            <div class="row">
-                <ul class="nav nav-tabs col-md-8 col-md-push-2">
+            
+            <div class="row col-md-8 col-md-push-2">
+
+                <h5><i>Post something</i></h5>
+                <ul class="nav nav-tabs">
                     <li class="active"><a data-toggle="tab" href="#announcement">Announcement</a></li>
                     <li><a data-toggle="tab" href="#survey">Survey</a></li>
                 </ul>
             </div>
         </div>
 
-        <!--ANNOUNCEMENTS-->
+        
         <div class="tab-content">
+            <!--ANNOUNCEMENTS-->
             <div id="announcement" class="container announcement-group tab-pane active">
                 <div class="row form-group">
                     <div class="col-md-8 col-md-push-2">
-                        <h5>Submit a Post:</h5>
                         <form>
                             <input class="announcement-title form-control" placeholder="title"></input>
                             <textarea class="announcement-body form-control" placeholder="body">
@@ -65,7 +68,6 @@
             <div id="survey" class="container survey-group tab-pane">
                 <div class="row form-group">
                     <div class="col-md-8 col-md-push-2">
-                        <h5>Post a Survey:</h5>
                         <input class="survey-title form-control" placeholder="Ask a question..."></input>
                         <div class="survey-choices">
                             <input class="survey-choice form-control" placeholder="Option 1"></input>
