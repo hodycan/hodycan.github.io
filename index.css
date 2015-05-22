@@ -5,6 +5,10 @@ body {
     background: #cbcbcb;
 }
 
+a {
+    /*color: #330033;*/
+}
+
 /*Navigation*/
 .nav {
     background: #cbcbcb;
@@ -30,8 +34,14 @@ body {
     padding-bottom: 10px
 }
 
+
+/*Tabs*/
+.nav-tabs .tab {
+}
+
+
 /*Submission text fields and button*/
-.tab-content div:first-child {
+.tab-content .container {
     padding: 7px;
 }
 
