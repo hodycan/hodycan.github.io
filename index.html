@@ -1,108 +1,32 @@
 <!DOCTYPE html>
 
-<!--After log in-->
 
-<html>
-
-
-    <head>
-        <title>Club Home Page</title>
-        <link type="text/css" rel="stylesheet" href="bootstrap.min.css">
-        <link type="text/css" rel="stylesheet" href="index.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-        <script src="submission.js"></script>        
-    </head>
-
-
-    <body>
-        <!--NAVIGATION-->
-        <div class="nav">
-            <div class="container">
-                <div class="pull-left">
-                    <a href="" class="home">
-                        <h1 class="pull-left">Club Name</h1> <!-- Make this Club Logo -->
-                    </a>
-                </div>
-                <div class="pull-right">
-                    <ul class="nav-links">
-                        <li class="dropdown-toggle"><a href="">Settings</a></li>
-                        <li><a href="">Log Out</a></li>
-                    </ul>
-                </div>
-
-            </div>
-        </div>
-
-
-        <!-- tabs for post type -->
-        <div class="container post-type-tabs">
-            
-            <div class="row col-md-8 col-md-push-2">
-
-                <h5><i>Post something</i></h5>
-                <ul class="nav nav-tabs">
-                    <li class="tab active"><a data-toggle="tab" href="#announcement">Announcement</a></li>
-                    <li class="tab"><a data-toggle="tab" href="#survey">Survey</a></li>
-                </ul>
-            </div>
-        </div>
-
-        
-        <div class="tab-content">
-            <!--ANNOUNCEMENTS-->
-            <div id="announcement" class="container announcement-group tab-pane active">
-                <div class="row form-group">
-                    <div class="col-md-8 col-md-push-2">
-                        <form>
-                            <input class="announcement-title form-control" placeholder="title"></input>
-                            <textarea class="announcement-body form-control" placeholder="body">
-                            </textarea>
-                        </form>
-                        <a href="#" class="post-announcement-btn btn btn-primary pull-right disabled">Post</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- SURVEYS -->
-            <div id="survey" class="container survey-group tab-pane">
-                <div class="row form-group">
-                    <div class="col-md-8 col-md-push-2">
-                        <input class="survey-title form-control" placeholder="Ask a question..."></input>
-                        <div class="survey-choices">
-                            <input class="survey-choice form-control" placeholder="Option 1"></input>
-                            <input class="submit-choice form-control" placeholder="Option 2"></input>
-                        </div>
-                        <a href="#" class="add-choice pull-left disabled">Add another option</a>
-                        <a href="#" class="post-survey-btn btn btn-primary pull-right disabled">Post</a>
-                    </div>
-                </div>
-            </div>   
-        </div>   
-
-        <!--POSTS-->
-        <div class="container">
-        <div class="row">
-            <div class="newsfeed col-md-8 col-md-push-2">
-                <div class="post">
-                    <a href="#"><h2>Post Title</h2></a>
-                    <small>
-                        <p class='post-date'>MM/DD/YYYY</p>
-                        Posted by: 
-                        <p class='post-submitter'>First Last</p>
-                    </small>
-                    <p>
-                    <!--<img src="URL">-->
-                    word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word 
-                    </p>
-                </div>
-            </div>
-        </div>
-        </div>
-
-
-
-    </body>
+<link rel="stylesheet" type="text/css" href="styling.css">
+<meta name="author" content="Cody Han">
 
 
 <html>
+
+<body>
+
+<div class="header centered">
+	<h1> Cody Han </h1>
+</div>
+
+<div class="section" id="photography">
+	<a href="photography.html">
+		<div class="section-text">PHOTOGRAPHY</div>
+		<!-- <img src="images/brittany.jpg"> -->
+	</a>
+</div>
+
+<div class="section" id="music-production">
+	<a href="music-production.html">
+		<div class="section-text">MUSIC PRODUCTION</div>
+		<!-- <img src="images/brittany.jpg"> -->
+	</a>
+</div>
+
+
+</body>
+</html>
