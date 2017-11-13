@@ -1,0 +1,19 @@
+#gallery {
+	min-height: 300px;
+	max-width: auto;
+	width: auto;
+
+	margin-left: 10%;
+	margin-right: 10%;
+	position: relative;
+
+	text-align: center;
+
+}
+
+div.song {
+	max-width: 70%;
+	max-height: 70%;
+	vertical-align: middle;
+	margin: auto;
+}

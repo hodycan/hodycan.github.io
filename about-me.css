@@ -1,0 +1,39 @@
+#biography-photo {
+	max-width: 100%;
+	max-height: 100%;
+	margin: auto;	
+	margin-bottom: 0px;
+}
+
+#biography-photo img {
+	width: 50%;
+    height: 50%;
+    left: 50%;
+    top: 50%;
+    margin: auto;
+    padding: auto;
+    display: block;
+}
+
+#biography {
+	text-align: center;
+}
+
+#biography-text {
+	margin-top: 0px;
+}
+
+@media only screen and (min-width: 1000px) {
+	#biography-text {
+		font-size: 2em;
+	}
+}
+
+
+
+
+
+
+
+
+
