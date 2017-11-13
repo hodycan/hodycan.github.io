@@ -1,66 +1,119 @@
-* {
-    font-family: "Open Sans", Sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+/* COMPONENTS */
+
+/* used for: header */
+.centered {
+    margin: auto;
+    width: 50%;
+    text-align: center;
 }
+
+
+/* GENERAL */
+
 body {
-    background: #cbcbcb;
+	background-color: #305254;
+	background: #305254; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#203638, #305254); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#203638, #305254); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#203638, #305254); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#203638, #305254);
+	color: #ddd;
+    font-size: 100%;
+    font-family: 'Raleway', sans-serif;
 }
 
-a {
-    /*color: #330033;*/
-}
-
-/*Navigation*/
-.nav {
-    background: #cbcbcb;
-    border: 2px solid #00000;
-}
-
-.nav-links {
-    color: #5a5a5a;
-    font-size: 15px;
-    font-weight: bold;
-    padding-top: 30px;
-    padding-right: 20px;
-    text-transform: uppercase;
-}
-
-.nav-links li {
-    display: inline;
-    padding-left: 20px;
-}
-
-/*Home Button*/
-.home h1 {
-    padding-bottom: 10px
+/* remove styling from hyperlinks*/
+body a {
+	color: inherit;
+	text-decoration: none;
 }
 
 
-/*Tabs*/
-.nav-tabs .tab {
+/* SECTIONS (links to different sections of portfolio) */
+
+div.section {
+
+	min-height: 300px;
+	height: auto;
+	width: auto;
+
+	margin-left: 10%;
+	margin-right: 10%;
+
+	font-weight: bold;
+
+	position: relative;
+
+	text-align: center;
+    vertical-align: middle;
+
+	-webkit-transition: filter .4s ease-in;
+	-moz-transition: filter .4s ease-in;
+	-o-transition: filter .4s ease-in;
+	transition: filter .4s ease-in;
+}
+
+#photography {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/background1.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#music-production {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/background2.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+/*TEXT ON IMAGE*/
+div.section-text {
+
+	color: #fff;
+	position: absolute;
+	max-width: 100%;
+	max-height: 100%;
+	margin: auto;
+	top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    text-align: center;
+    vertical-align: middle;
+
+    line-height: 300px;
+
+    border: 3px solid;
+
+    visiblity: hidden;
+
+}
+
+/*HOVER EFFECTS*/
+.section:hover {
+	filter: brightness(113%);
 }
 
 
-/*Submission text fields and button*/
-.tab-content .container {
-    padding: 7px;
+/* FONT SIZES */
+
+body * {
+	margin: 1em;
 }
 
-.post-button {
-    margin: 10px;
+h1 {
+    font-size: 2.5em;
 }
 
-
-/*Post feed*/
-.post small p {
-    display: inline;
+h2 {
+    font-size: 1.875em;
 }
 
-.newsfeed {
-    list-style-type: none;
+p {
+    font-size: 0.875em;
 }
 
-.post {
-    padding: 20px;
-    background: #ededed;
-    border-radius: 5px;
-}
