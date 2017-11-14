@@ -97,21 +97,21 @@ div.section {
 }
 
 #photography {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/background1.jpg);
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/background1.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
 }
 
 #music-production {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/background2.jpg);
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/background2.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
 }
 
 #about-me {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/cody2.jpg);
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/cody2.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
