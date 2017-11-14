@@ -167,6 +167,10 @@ p {
     font-size: 0.875em;
 }
 
+#email {
+	color: #3DBDB2;
+}
+
 
 @media screen and (max-width: 600px) {
 	body div {
