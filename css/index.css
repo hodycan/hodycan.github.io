@@ -1,6 +1,6 @@
-/* SECTIONS (links to different sections of portfolio) */
+/* showcases (links to different showcases in portfolio) */
 
-div.section {
+div.showcase {
 
 	min-height: 300px;
 	height: auto;
@@ -45,7 +45,7 @@ div.section {
 }
 
 /*TEXT ON IMAGE*/
-div.section-text {
+div.showcase-text {
 
 	color: #fff;
 	position: absolute;
@@ -70,7 +70,7 @@ div.section-text {
 /*HOVER EFFECTS*/
 /* only hover effect with screen size bigger than phones/specific tablets */
 @media screen and (min-width: 600px) {
-	.section:hover {
+	.showcase:hover {
 	filter: brightness(150%);
 	}
 }
