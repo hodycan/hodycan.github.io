@@ -20,12 +20,21 @@
 }
 
 #biography-text {
+	border: 3px solid white;
 	margin-top: 0px;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+#biography-text p {
+	padding: 5%;
+	border: 3px solid white;
+	width: 100%;
 }
 
 @media only screen and (min-width: 1000px) {
 	#biography-text {
-		font-size: 2em;
+		font-size: 1.5em;
 	}
 }
 

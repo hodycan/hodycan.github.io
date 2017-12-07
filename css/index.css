@@ -1,0 +1,76 @@
+/* SECTIONS (links to different sections of portfolio) */
+
+div.section {
+
+	min-height: 300px;
+	height: auto;
+	width: auto;
+
+	margin-left: 5%;
+	margin-right: 5%;
+
+	font-weight: bold;
+
+	position: relative;
+
+	text-align: center;
+    vertical-align: middle;
+
+	-webkit-transition: filter .4s ease-in;
+	-moz-transition: filter .4s ease-in;
+	-o-transition: filter .4s ease-in;
+	transition: filter .4s ease-in;
+	
+}
+
+#photography {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/background1.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#music-production {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/background2.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#about-me {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/cody2.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+/*TEXT ON IMAGE*/
+div.section-text {
+
+	color: #fff;
+	position: absolute;
+	max-width: 100%;
+	max-height: 100%;
+	margin: auto;
+	top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    text-align: center;
+    vertical-align: middle;
+
+    line-height: 300px;
+
+    border: 8px double #3DBDB2;
+}
+
+
+
+/*HOVER EFFECTS*/
+/* only hover effect with screen size bigger than phones/specific tablets */
+@media screen and (min-width: 600px) {
+	.section:hover {
+	filter: brightness(150%);
+	}
+}
