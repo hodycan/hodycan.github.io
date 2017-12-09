@@ -1,0 +1,40 @@
+User Interviews are important because they provide a different outside perspective. The user is the most important factor to consider when it comes to UI and UX, so what better resource than the users themselves? It is important to ask questions about the user themselves for context, what kind of features they would want in a portfolio, and what purpose they would use it for.
+
+Competitor Analysis is the act of viewing similar products/projects by other people (your "competition"). I viewed the portfolios of other graphic designers, programmers, and photographers. I analyzed them for things such as strengths, weaknesses, and trends, so that you have a better sense of what kind of context your project should be in. 
+
+A Feature Value Matrix allows for me to analyze the user value, effort needed, and business value of the features of my website using scores for each categories. The features I selected are the minimal features I felt were essential to the accessibility of my content.
+
+Feature Prioritization allows for me to look at the scores I generated in my Feature Value Matrix, and prioritize the features that I want to implement accordingly. In the building of my interface, the features that I focus on first are dependent on Feature Prioritization.
+
+User Stories allow for me to think about what kind of users will be using my site, and the goals that they may have on my site. In the format of "As a (Type of user), I want to… (What), so that… (Outcome). I know I've succeeded when...", these User Stories allow for me to keep the intentions of the users in mind in the development of my interface.
+
+A Cognitive Walkthrough is the act of walking a user tester, in person, through particular interactions and goals on your website. They are important because they allowed for me to directly see users interacting with my site, which gave me real-world results as opposed to just thinking theoretically as I was with other forms of research and testing. A challenge I faced was finding a balance between redundancy and coverage. A lot of the results I felt were redundant and unnecessary.
+
+User Test 1 tested users' ability to quickly determine what my website was about. What I discovered was that some people did not notice that I had a music production tab, and some people couldn't even recognize that it was a personal portfolio. 
+
+User Test 2 tested how easy and intuitive it was to navigate to the home page. The way I have it right now is that you have to click on the header that is my full name. Most users were able to recognize that intuitively.
+
+
+Here are some of the things I have discovered in my user research and testing. 
+
+1. There was a some controversy in how aesthetically pleasing my color scheme was. Some people did not like the blue and yellow on a dark background. 
+
+2. I have also learned that my photography gallery was not very intuitive nor easy to view. People complained about pictures being bigger than the viewport, which prevented them from being able to view the picture in whole. 
+
+3. I also discovered that users thought that there was not being enough of a focus on my own personal information about who I was. 
+
+4. Some users thought that I should add more information to my music tracks and photos, such as context, the creative process, and etc.
+
+What I took from all of this was that my research and testing further validated the philosophy of user centered design. All of my feedback had to do with the accessibility of my content and the way it was presented.
+
+
+Since the analysis of my user testing and research, I have incorporated some solutions and adjustments to my portfolio:
+
+1. The link to my about me section was at first hidden out of the view port because you had to scroll down to see it. I have added a consistent link to my about me section to the top of every page in my site (excluding this one).
+
+2. I decided to keep my color scheme the way it was, despite some feedback that was against it. I have, however, made some coloring more consistent, such as making most links blue, and yellow on mouse hover.
+
+I plan on developing a responsive gallery for my photography that isn't just a series of photos, each on its own line. The new gallery will consist of multiple columns is a grid-esque layout that displays each picture as a thumbnail, and will also allow for clicking on the pictures to view them in full. I also plan on writing short descriptions and captions for each project that I have listed on my portfolio.
+
+
+

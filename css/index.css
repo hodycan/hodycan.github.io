@@ -1,5 +1,6 @@
 /* showcases (links to different showcases in portfolio) */
 
+
 div.showcase {
 
 	min-height: 300px;
@@ -37,12 +38,6 @@ div.showcase {
 	background-position: center;
 }
 
-#about-me {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/cody2.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
-}
 
 /*TEXT ON IMAGE*/
 div.showcase-text {
@@ -64,7 +59,6 @@ div.showcase-text {
 
     border: 8px double #3DBDB2;
 }
-
 
 
 /*HOVER EFFECTS*/
