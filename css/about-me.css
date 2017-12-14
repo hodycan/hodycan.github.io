@@ -1,37 +1,52 @@
-#biography-photo {
-	max-width: 100%;
-	max-height: 100%;
-	margin: auto;	
-	margin-bottom: 0px;
+#about-me-nav {
+	color: yellow;
 }
 
-#biography-photo img {
-	width: 50%;
-    height: 50%;
-    left: 50%;
-    top: 50%;
-    margin: auto;
-    padding: auto;
-    display: block;
+/* margin and padding debugging */
+main * {
+	/*border: 2px solid white;*/
+}
+
+main div {
+	/*border: 2px dashed white;*/
 }
 
 #biography {
-	text-align: center;
+}
+
+#biography div {
+}
+
+#biography-photo {
+	width: 50%;
+	margin: auto;
+	padding: auto;
+}
+
+#biography-photo img {
+	display: block;
+	width: 40%;
+    min-width: 40px;
+    margin: auto;
+    border: 2px solid #ddd;
 }
 
 #biography-text {
-	/*border: 3px solid white;*/
-	margin-top: 0px;
-	margin-left: 10%;
-	margin-right: 10%;
-	display: relative;
+	width: 50%;
+	margin: auto;
+}
+
+#biography-text dl dt{
+	display: inline;
+}
+
+#biography-text dl dd{
+	display: inline;
 }
 
 #biography-text p {
 	padding: 5%;
-	/*border: 3px solid white;*/
-	margin: auto
-	width: 100%;
+	margin-top: 0em;
 }
 
 @media only screen and (min-width: 1000px) {

@@ -1,0 +1,46 @@
+#development-nav {
+	color: yellow;
+}
+
+/*main section {
+	border: 1px dashed white;
+}*/
+
+
+section {
+	text-align: center;
+	width: 90%;
+	margin: auto;
+}
+
+section > div {
+	margin: auto;
+	margin-bottom: 1em;
+	width: 80%;
+}
+
+section a > * {
+	display: inline-block;
+}
+
+section div a > * {
+	margin: 0px;
+}
+
+section p {
+	font-size: 1em;
+}
+
+main a:hover {
+	color: yellow;
+}
+
+.thumbnail {
+    border: 1px solid #eee; /* Gray border */
+    border-radius: 5px;  /* Rounded border */
+    padding: 5px; /* Some padding */
+    min-width: 20em;
+    max-width: 400px;
+    width: 80%;
+}
+

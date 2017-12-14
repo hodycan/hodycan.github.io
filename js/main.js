@@ -1,27 +1,15 @@
 $(document).ready(function(){
-
-    // heading hover
-    $(".centered h1").hover(
-    	function(){
-        	$(this).css("color", "yellow");
-        }, 
-        function(){
-        	$(this).css("color", "#3DBDB2");
-        }
-    ),
-
-    // email hover
-    $("#email").hover(
-    	function(){
-        	$(this).css("color", "yellow");
-        }, 
-        function(){
-        	$(this).css("color", "#3DBDB2");
-    	}
-    ),
+    // $("a").hover(
+    //     function(){
+    //         $(this).css("color", "yellow");
+    //     }, 
+    //     function(){
+    //         $(this).css("color", "#3DBDB2");
+    //     }
+    // ),    
 
     // section-text hover
-    $(".section-text").hover(
+    $(".showcase-text").hover(
         function(){
             $(this).css("border", "8px double yellow");
         }, 
@@ -44,7 +32,41 @@ $(document).ready(function(){
             }
 
         }
-    )
-    
+    ),    
 
-});
+    $(".nav-link").click(
+        function(){
+            // $(this).toggleClass("active");
+        }
+    ),
+    
+    $("#menu-button").click(
+        function(){
+            this.classList.toggle("expanded");
+            $("#hamburger-menu").toggleClass("active");
+        }
+    ),
+    
+    $(".gallery .photo").click(
+        function() {
+            $(".photo.active, .image-overlay.active").toggleClass("active");
+            $('.image-overlay').empty();
+
+            $('.image-overlay').toggleClass("active");
+            this.classList.toggle("active");
+            $('.image-overlay').append($(this).clone());
+        }
+    ),
+
+    
+    $(".image-overlay").click(
+        function() {
+            $(this).empty()
+            $('.image-overlay').toggleClass("active");
+            $('.gallery').css('display', 'block');
+        }
+    );
+})
+
+
+

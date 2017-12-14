@@ -3,6 +3,7 @@
 
 div.showcase {
 
+	margin: 1em;
 	min-height: 300px;
 	height: auto;
 	width: auto;
@@ -25,14 +26,24 @@ div.showcase {
 }
 
 #photography {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/background1.jpg);
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), 
+		rgba(0, 0, 0, 0.5)), url(../images/index_links/photography.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
 }
 
 #music-production {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/background2.jpg);
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), 
+		rgba(0, 0, 0, 0.5)), url(../images/index_links/music-production.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#development {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), 
+		rgba(0, 0, 0, 0.5)), url(../images/index_links/development.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -42,7 +53,9 @@ div.showcase {
 /*TEXT ON IMAGE*/
 div.showcase-text {
 
-	color: #fff;
+    color: #5DDDE2;
+	text-shadow: 0 0 20px #3D8D92;
+
 	position: absolute;
 	max-width: 100%;
 	max-height: 100%;
@@ -65,6 +78,6 @@ div.showcase-text {
 /* only hover effect with screen size bigger than phones/specific tablets */
 @media screen and (min-width: 600px) {
 	.showcase:hover {
-	filter: brightness(150%);
+		filter: brightness(150%);
 	}
 }

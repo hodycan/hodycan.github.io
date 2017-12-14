@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+	<script src="../essential/portfoliohead.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/photography.css">
+
+	<title> Cody Han | Photography </title>
+</head>
+
+
+<body>
+
+<div class="image-overlay">
+</div>
+
+<script src="../essential/portfolioheader.js"></script>
+
+<main>
+	<div class="gallery">
+		<div class='column'>
+		</div>
+		<div class='column'>
+		</div>
+		<div class='column'>
+
+		</div>
+	</div>
+</main>
+
+<div id="copyright">
+&#169;	<script type="text/javascript">
+	var d = new Date()
+	document.write(d.getFullYear())
+	</script> 
+	Cody Han
+</div>
+</body>
+
+<script>
+	
+var folder = "../images/photo_portfolio/";
+var imageCount = 17;
+var col = 1;
+for (i = 1; i <= imageCount; i++) { 
+	if (col == 0) {
+		col++;
+	}
+    var src = folder + i + ".jpg";
+	var element = '<div>\
+		<img class="photo" src=' +src+'>\
+		</div>';
+	$(".gallery .column:nth-child("+col+")").append(element);
+	console.log("added "+src+" to column "+col)
+	col++;
+	col %= 4;
+} 
+
+</script>
+
+
+</html>

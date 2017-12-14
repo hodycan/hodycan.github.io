@@ -1,52 +1,25 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 @import url('https://fonts.googleapis.com/css?family=Barlow:100,700');
 
-/* used for: header */
-.centered {
-    font-family: 'Barlow', sans-serif;
-    font-weight: bold 700;
-    margin: auto;
-    width: 50%;
-    text-align: center;
-    color: #3DBDB2;
+/* margin and padding debugging */
+header * {
+	/*border: 2px solid white;*/
 }
 
-.centered h1 {
-	margin-bottom: 0;
+body a {
+	/*border: 2px dashed white;*/
 }
 
-@media screen and (min-width: 1200px) {
-	.centered h1 {
-		font-size: 5em;
-	}
+/* GENERAL */
 
-}
-
-.centered h2 {
+#page-title {
+	margin-top: .5em;
 	text-align: center;
     font-weight: 100;
 }
 
-@media screen and (max-width: 768px) {
-	.centered h2 {
-		text-align: center;
-	    font-weight: 100;
-	}
-	.centered {
-	    font-family: 'Barlow', sans-serif;
-	    font-weight: bold 700;
-	    margin: auto;
-	    width: 100%;
-	    text-align: center;
-	    color: #3DBDB2;
-}
-}
-
-
-/* GENERAL */
-
 body {
-	background-color: #1d1d1d;
+	background-color: #555;
 
 	/*vignette*/
     /*box-shadow: inset 0 0 8em 3em #111;*/ 
@@ -58,8 +31,9 @@ body {
 
     font-size: 100%;
 	background-repeat: no-repeat;
-    font-family: 'Raleway', sans-serif;
-	color: #ddd;
+    /*font-family: 'Raleway', sans-serif;*/
+	font-family: 'Barlow', sans-serif;
+	color: #fff;
 
 	margin: 0;
 	padding: 0;
@@ -76,16 +50,16 @@ body a {
 /* FONT SIZES */
 
 body * {
-	margin: 1em;
+	/*margin: 1em;*/
 }
 
 body a {
 	color: #3DBDB2;
-
+	transition: 0.5s;
 }
 
 h1 {
-    font-size: 2.5em;
+    font-size: 4em;
 }
 
 h2 {
@@ -96,23 +70,164 @@ p {
     font-size: 0.875em;
 }
 
-header * {
-	/*border: 3px solid white;*/
+
+/* HEADER */
+header {
+	width: 100%;
+	display: inline-block;
+}
+
+header.home-page-header div {
+    text-align: center;
+	clear: right;
+}
+
+header.home-page-header #site-title {
+    font-weight: bold 700;
+    color: #5DDDE2;
+	text-shadow: 0 0 20px #3D8D92;
+}
+
+header.home-page-header #about-me {
+	top: 10px;
+	right: 15px;
+
+	font-weight: bold;
+	text-shadow: 0 0 10px #000;
+	position: absolute;
+}
+
+header.home-page-header h1 {
+	display: inline-block;
+	margin: 0;
+}
+
+header hr {
+	border-color: #3DBDB2;
+}
+
+
+/* NAVIGATION */
+
+nav {
+	/*background-color: #333;*/
+	display: inline-block;
+	border-bottom: 1px solid grey;
+	margin-bottom: 20px;
+	width: 100%;
+	text-align: center;
+}
+
+nav a.nav-link {
+    font-weight: bold 700;
+    font-size: 2.5em;
+	padding-left: .2em;
+	padding-right: .2em;
+	margin: 1px;
+	text-align: center;
+
+    transition: 0.4s;
+    color: #5DDDE2;
+	text-shadow: 0 0 20px #3D8D92;	
+
+	white-space: nowrap;
+}
+
+nav span {
+	float: left;
+}
+
+nav div.nav-links-container {
+	/*float: left;*/
+	height: 80%;
+}
+
+a.nav-link.active, a.nav-link:hover, 
+#site-title:hover, #about-me:hover, a.menu-link:hover {
+    color: yellow;
+}
+
+/* MOBILE MENU */
+
+#menu-container {
+	text-align: center;
+	width: 80%;
 	margin: auto;
+	display: none;
 }
 
-#email {
-	color: #3DBDB2;
+#menu-button.accordion {
+    background-color: #333;
+    color: inherit;
+    cursor: pointer;
+    text-align: center;
+    border: none;
+    outline: none;
+    margin: auto;
+
+    display: block;
 }
 
-#about-me {
-	float: right;
+#menu-container button.accordion:before {
+	content: "SHOW";
+	font-weight: bold;
 }
 
+#menu-container button.accordion.active:before {
+	content: "HIDE";
+	font-weight: bold;
+}
 
-@media screen and (max-width: 600px) {
+#menu-container div.accordion-content {
+	display: none;
+}
+
+a.menu-link {
+    display: block;
+	text-shadow: 0 0 10px #000;
+
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 1200px) {
+	header h1 {
+		font-size: 5em;
+	}
+}
+
+@media screen and (max-width: 768px) {
 	body div {
 		font-size: 100%;
 	}
+
+	nav {
+		display: none;
+	}
+
+	nav a.nav-link {
+	    font-size: 2em;
+	}
+
+	#about-me {
+		display: none;
+	}
+
+	#menu-container {
+		display: block;
+	}
+}
+
+
+#copyright {
+	clear: both;
+	display: block;
+	position: relative;
+	width: 100%;
+	top: 10px;
+	bottom: 10px;
+	margin: auto;
+	padding-bottom: 10px;
+	text-align: center;
 }
 
