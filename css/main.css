@@ -97,7 +97,7 @@ header.home-page-header #about-me {
 	position: absolute;
 }
 
-header.home-page-header h1 {
+header h1 {
 	display: inline-block;
 	margin: 0;
 }
@@ -142,7 +142,7 @@ nav div.nav-links-container {
 	height: 80%;
 }
 
-a.nav-link.active, a.nav-link:hover, 
+a, a.nav-link.active, a.nav-link:hover, 
 #site-title:hover, #about-me:hover, a.menu-link:hover {
     color: yellow;
 }

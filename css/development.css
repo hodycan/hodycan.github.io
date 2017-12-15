@@ -2,20 +2,29 @@
 	color: yellow;
 }
 
-/*main section {
-	border: 1px dashed white;
-}*/
+main *, main {
+	/*border: 1px dashed white;*/
+}
 
-
-section {
-	text-align: center;
+main {
 	width: 90%;
 	margin: auto;
 }
 
+main div.row {
+	display: inline-block;
+	border-bottom: 1px solid white;
+}
+
+section {
+	box-sizing: border-box;
+	text-align: center;
+	width: 50%;
+	float: left;
+}
+
 section > div {
 	margin: auto;
-	margin-bottom: 1em;
 	width: 80%;
 }
 
@@ -23,8 +32,8 @@ section a > * {
 	display: inline-block;
 }
 
-section div a > * {
-	margin: 0px;
+section div a > h2 {
+	margin: 5px;
 }
 
 section p {
@@ -35,12 +44,28 @@ main a:hover {
 	color: yellow;
 }
 
+div.thumbnail-container {
+	margin-bottom: 10px;
+}
+
 .thumbnail {
     border: 1px solid #eee; /* Gray border */
     border-radius: 5px;  /* Rounded border */
-    padding: 5px; /* Some padding */
-    min-width: 20em;
+    padding: 1px; /* Some padding */
+    min-width: 10em;
     max-width: 400px;
-    width: 80%;
+    width: 10px;
+}
+
+
+@media screen and (max-width: 768px) {
+	section {
+		width: 100%;
+		border-bottom: 1px solid white;
+	}
+
+	main div.row {
+		border-bottom: 0px solid white;
+	}
 }
 

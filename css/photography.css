@@ -51,17 +51,21 @@
 	height: 100%;
 	background-color:rgba(0, 0, 0, 0.9);
 	z-index: 99;
+
+	padding: 10px;
 }
 
 
 .image-overlay img {
-	display: block;
-	height: 90%;
-	position: relative;
-	margin: auto;
-	top: 5%;
-
-	/*left: 15%;*/
+	display: inline-block;
+	/*object-fit: contain;*/
+	max-height: 80%;
+	max-width: 80%;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 /*TODO: RESPONSIVE COLUMNS*/

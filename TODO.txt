@@ -2,6 +2,7 @@ fix:
 	shorten the site heading height!! DONE.
 		clean up the CSS.
 	reimplement ALL sizing with content: box-sizing
+	use lower quality images
 
 navigation bar:
 	done.

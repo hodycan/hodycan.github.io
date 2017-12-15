@@ -52,7 +52,6 @@ for (i = 1; i <= imageCount; i++) {
 		<img class="photo" src=' +src+'>\
 		</div>';
 	$(".gallery .column:nth-child("+col+")").append(element);
-	console.log("added "+src+" to column "+col)
 	col++;
 	col %= 4;
 } 

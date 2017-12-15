@@ -2,8 +2,8 @@
 	color: yellow;
 }
 
-#gallery {
-	min-height: 300px;
+main > div {
+	/*min-height: 300px;*/
 	max-width: auto;
 	width: 80%;
 
@@ -11,11 +11,15 @@
 	margin-left: 10%;
 	margin-right: 10%;
 
-	text-align: center;
+	/*text-align: center;*/
 	display: block;
 }
 
 div.song {
 	vertical-align: middle;
 	margin: auto;
+}
+
+div.song h2 {
+	margin-bottom: 0px;
 }
