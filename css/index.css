@@ -1,64 +1,53 @@
 /* showcases (links to different showcases in portfolio) */
+body * {
+	/*border: 1px dashed white;*/
+}
 
+div.showcase-container {
 
-div.showcase {
+	box-sizing: border-box;
 
-	margin: 1em;
-	min-height: 300px;
-	height: auto;
-	width: auto;
+	/*width: 100%;*/
 
-	margin-left: 5%;
-	margin-right: 5%;
-
-	font-weight: bold;
-
-	position: relative;
-
-	text-align: center;
-    vertical-align: middle;
-
+	display: block;
 	-webkit-transition: filter .4s ease-in;
 	-moz-transition: filter .4s ease-in;
 	-o-transition: filter .4s ease-in;
 	transition: filter .4s ease-in;
-	
+
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+
 }
 
 #photography {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.5), 
 		rgba(0, 0, 0, 0.5)), url(../images/index_links/photography.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
 }
 
 #music-production {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.5), 
 		rgba(0, 0, 0, 0.5)), url(../images/index_links/music-production.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
 }
 
 #development {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.5), 
 		rgba(0, 0, 0, 0.5)), url(../images/index_links/development.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
 }
 
 
 /*TEXT ON IMAGE*/
+
 div.showcase-text {
 
     color: #5DDDE2;
 	text-shadow: 0 0 20px #3D8D92;
 
-	position: absolute;
-	max-width: 100%;
-	max-height: 100%;
+	/*position: absolute;*/
+
+	width: 100%;
+	height: 300px;
 	margin: auto;
 	top: 0;
     left: 0;
@@ -66,18 +55,24 @@ div.showcase-text {
     bottom: 0;
 
     text-align: center;
-    vertical-align: middle;
 
     line-height: 300px;
+    /*display: table-cell;*/
+    /*vertical-align: middle;*/
 
-    border: 8px double #3DBDB2;
+    font-size: 2em;
+}
+
+.showcase-container:hover {
+	filter: brightness(150%);
 }
 
 
 /*HOVER EFFECTS*/
 /* only hover effect with screen size bigger than phones/specific tablets */
-@media screen and (min-width: 600px) {
-	.showcase:hover {
-		filter: brightness(150%);
+@media screen and (max-width: 769px) {
+	div.showcase-text {
+	height: 150px;
+    line-height: 150px;
 	}
 }

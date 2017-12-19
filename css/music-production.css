@@ -1,9 +1,12 @@
 #music-production-nav {
-	color: yellow;
+	color: white;
+}
+
+main * {
+	text-align: left;
 }
 
 main > div {
-	/*min-height: 300px;*/
 	max-width: auto;
 	width: 80%;
 
@@ -11,7 +14,6 @@ main > div {
 	margin-left: 10%;
 	margin-right: 10%;
 
-	/*text-align: center;*/
 	display: block;
 }
 

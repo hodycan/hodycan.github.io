@@ -8,15 +8,6 @@ $(document).ready(function(){
     //     }
     // ),    
 
-    // section-text hover
-    $(".showcase-text").hover(
-        function(){
-            $(this).css("border", "8px double yellow");
-        }, 
-        function(){
-            $(this).css("border", "8px double #3DBDB2");
-        }
-    ),
 
     $("button.accordion").click(
         function(){
@@ -31,12 +22,6 @@ $(document).ready(function(){
                 panel.style.display = "block";
             }
 
-        }
-    ),    
-
-    $(".nav-link").click(
-        function(){
-            // $(this).toggleClass("active");
         }
     ),
     
