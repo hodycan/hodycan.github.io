@@ -13,19 +13,17 @@ main {
 
 main div.row {
 	display: inline-block;
-	border-bottom: 1px solid white;
 }
 
 section {
 	box-sizing: border-box;
-	text-align: center;
-	width: 50%;
-	float: left;
+	width: 100%;
 }
 
 section > div {
 	margin: auto;
 	width: 80%;
+	text-align: left;
 }
 
 section a > * {
@@ -49,23 +47,16 @@ div.thumbnail-container {
 }
 
 .thumbnail {
-    border: 1px solid #eee; /* Gray border */
-    border-radius: 5px;  /* Rounded border */
-    padding: 1px; /* Some padding */
-    min-width: 10em;
-    max-width: 400px;
-    width: 10px;
+    /*border: 1px solid #eee; /* Gray border */*/
+    /*border-radius: 5px;  /* Rounded border */*/
+    /*padding: 1px;  Some padding */
+    /*min-width: 40px;*/
+    max-height: 30px;
+    max-width: 100%;
 }
 
 
 @media screen and (max-width: 768px) {
-	section {
-		width: 100%;
-		border-bottom: 1px solid white;
-	}
 
-	main div.row {
-		border-bottom: 0px solid white;
-	}
 }
 
