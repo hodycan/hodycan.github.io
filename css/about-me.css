@@ -1,5 +1,5 @@
 #about-me-nav {
-	color: white;
+	font-weight: bold;
 }
 
 /* margin and padding debugging */
@@ -11,9 +11,12 @@ main div {
 	/*border: 2px dashed white;*/
 }
 
-section {
+main {
 	width: 60%;
 	margin: auto;
+}
+
+section {
 	box-sizing: border-box;
 	padding: 0;
 }

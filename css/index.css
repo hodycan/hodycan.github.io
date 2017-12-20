@@ -3,6 +3,14 @@ body * {
 	/*border: 1px dashed white;*/
 }
 
+#title {
+	display: block;
+}
+
+header nav #home-nav {
+	display: none;
+}
+
 div.showcase-container {
 
 	box-sizing: border-box;
@@ -41,9 +49,10 @@ div.showcase-container {
 
 div.showcase-text {
 
-    color: #5DDDE2;
-	text-shadow: 0 0 20px #3D8D92;
+	text-shadow: 0 0 10px black;
+	font-weight: normal;
 
+	/*color: #ddd;*/
 	/*position: absolute;*/
 
 	width: 100%;
@@ -65,6 +74,10 @@ div.showcase-text {
 
 .showcase-container:hover {
 	filter: brightness(150%);
+}
+
+div.showcase-text:hover {
+	color: #fff;
 }
 
 

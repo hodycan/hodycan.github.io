@@ -1,19 +1,18 @@
 #music-production-nav {
-	color: white;
+	font-weight: bold;
 }
 
+main {
+	width: 70%;
+	margin: auto;
+}
 main * {
 	text-align: left;
 }
 
 main > div {
-	max-width: auto;
-	width: 80%;
-
-	padding-top: 20px;
-	margin-left: 10%;
-	margin-right: 10%;
-
+	/*width: 100%;*/
+	/*padding-top: 20px;*/
 	display: block;
 }
 

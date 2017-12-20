@@ -1,12 +1,4 @@
 $(document).ready(function(){
-    // $("a").hover(
-    //     function(){
-    //         $(this).css("color", "yellow");
-    //     }, 
-    //     function(){
-    //         $(this).css("color", "#3DBDB2");
-    //     }
-    // ),    
 
 
     $("button.accordion").click(
