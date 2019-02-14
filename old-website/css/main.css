@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css?family=Shrikhand');
+@import url('https://fonts.googleapis.com/css?family=Barlow:100,700');
+
+/* margin and padding debugging */
+body a {
+	/*border: 2px dashed white;*/
+}
+
+
+/* COLORS */
+
+body {
+	background-color: #efefe1;
+	color: #555;
+}
+
+body a {
+	color: #2DADA2;
+}
+
+a:hover, a.nav-link.active, a.nav-link:hover, 
+a h1:hover, #about-me:hover, a.menu-link:hover {
+	/* HOVER TEXT COLOR */
+	color: #000;
+}
+
+hr {
+	background-color: #2DADA2;
+}
+
+/* GENERAL */
+
+body {
+	/*vignette*/
+    /*box-shadow: inset 0 0 30em 1em #111; */
+
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;    
+
+    font-size: 0.875em;
+    /*font-family: 'Raleway', sans-serif;*/
+    /*font-family: 'Libre Franklin', sans-serif;*/
+	font-family: 'Barlow', sans-serif;
+
+	margin: 0;
+	padding: 0;
+}
+
+
+/* remove styling from hyperlinks*/
+body a {
+	text-decoration: none;
+}
+body * {
+	/*margin: 1em;*/
+}
+
+body a {
+	transition: 0.5s;
+}
+
+h1 {
+    font-size: 4em;
+}
+
+h2 {
+    font-size: 1.875em;
+}
+
+p {
+    font-size: 0.875em;
+}
+
+hr {
+	/*border: 1;*/
+	width: 100%;
+    height: 1px;
+    border: 0px;
+}
+
+/* HEADER */
+nav .row {
+	/*border: 1px solid black;*/
+}
+
+#title {
+	font-family: Shrikhand;
+	display: none;
+}
+
+header {
+    text-align: center;
+}
+
+header nav {
+	padding: 0;
+}
+
+header #title h1 {
+    font-weight: bold 700;
+	/*text-shadow: 0 0 20px #3D8D92;*/
+	display: inline-block;
+	margin-top: 10px;
+	margin-bottom: 0;
+
+	transition: .5s;
+}
+
+header nav > div.row {
+	display: block;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+header nav a {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+header nav > * {
+	display: inline-block;
+} 
+
+#portfolio-links {
+	display: none;
+}
+
+#portfolios-nav:hover \ #portfolio-links {
+	display: inline-block;
+	color: purple;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 1200px) {
+	header h1 {
+		font-size: 5em;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	body div {
+		font-size: 100%;
+	}
+
+}
+
+.footer {
+/*	clear: both;
+	display: block;*/
+	position: static;
+	width: 100%;
+
+	margin: auto;
+	padding-bottom: 10px;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	
+	text-align: center;
+}
+

@@ -1,0 +1,26 @@
+#music-production-nav {
+	font-weight: bold;
+}
+
+main {
+	width: 70%;
+	margin: auto;
+}
+main * {
+	text-align: left;
+}
+
+main > div {
+	/*width: 100%;*/
+	/*padding-top: 20px;*/
+	display: block;
+}
+
+div.song {
+	vertical-align: middle;
+	margin: auto;
+}
+
+div.song h2 {
+	margin-bottom: 0px;
+}

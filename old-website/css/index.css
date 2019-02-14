@@ -1,0 +1,91 @@
+/* showcases (links to different showcases in portfolio) */
+body * {
+	/*border: 1px dashed white;*/
+}
+
+#title {
+	display: block;
+}
+
+header nav #home-nav {
+	display: none;
+}
+
+div.showcase-container {
+
+	box-sizing: border-box;
+
+	/*width: 100%;*/
+
+	display: block;
+	-webkit-transition: filter .4s ease-in;
+	-moz-transition: filter .4s ease-in;
+	-o-transition: filter .4s ease-in;
+	transition: filter .4s ease-in;
+
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+
+}
+
+#photography {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), 
+		rgba(0, 0, 0, 0.5)), url(../images/index_links/photography.jpg);
+}
+
+#music-production {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), 
+		rgba(0, 0, 0, 0.5)), url(../images/index_links/music-production.jpg);
+}
+
+#development {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), 
+		rgba(0, 0, 0, 0.5)), url(../images/index_links/development.jpg);
+}
+
+
+/*TEXT ON IMAGE*/
+
+div.showcase-text {
+
+	text-shadow: 0 0 10px black;
+	font-weight: normal;
+
+	/*color: #ddd;*/
+	/*position: absolute;*/
+
+	width: 100%;
+	height: 300px;
+	margin: auto;
+	top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    text-align: center;
+
+    line-height: 300px;
+    /*display: table-cell;*/
+    /*vertical-align: middle;*/
+
+    font-size: 2em;
+}
+
+.showcase-container:hover {
+	filter: brightness(150%);
+}
+
+div.showcase-text:hover {
+	color: #fff;
+}
+
+
+/*HOVER EFFECTS*/
+/* only hover effect with screen size bigger than phones/specific tablets */
+@media screen and (max-width: 769px) {
+	div.showcase-text {
+	height: 150px;
+    line-height: 150px;
+	}
+}
