@@ -115,7 +115,7 @@ footer div {
 
 
 /*MOBILE RESPONSIVENESS*/
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
 
 	#nav-bar a {
 		text-align: center;
