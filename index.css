@@ -5,7 +5,7 @@
 
 body {
 	/*background-color: #339;*/
-	background-color: #fe6f5e;
+	background-color: #58507a;
 	color: #eee;
 
 	font-family: 'Muli';
@@ -55,7 +55,7 @@ a {
 
 #nav-bar a {
 	display: inline-block;
-	width: 15%;
+	width: 13%;
 	height: 30px;
 }
 
